@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    cdss_validator_config:
+        ports:
+            - '4849:4849'
+        volumes:
+            - '/home/riro/Technical_Specialist_Folder/Docker/data:/home/service/data'
+            - '/home/riro/Technical_Specialist_Folder/fhir/Assets/CDSS_Profiles:/home/service/fhir'
+        image: 'nhsdigitalmait/cdss_validator_config:20201022'

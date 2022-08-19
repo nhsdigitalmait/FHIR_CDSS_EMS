@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use max="" as equivalent to cardinality unbounded i.e. * -->
+<reference xmlns="http://hl7.org/fhir">
+	<CDS version="2.0-Alpha">
+		<CarePlan>
+			<elements>
+				<element name="status" allowed="active,completed,cancelled"/>
+			</elements>
+		</CarePlan>
+		<Condition>
+			<elements>
+				<element name="clinicalStatus" allowed="active,recurrence"/>
+				<element name="verificationStatus" allowed="provisional,differential,confirmed,unknown"/>
+			</elements>
+		</Condition>
+		<GuidanceResponse>
+			<elements>
+				<element name="status" allowed="success,data-requested,data-required,failure"/>
+			</elements>
+		</GuidanceResponse>
+		<QuestionnaireResponse>
+			<elements>
+				<element name="status" allowed="completed,amended,entered-in-error"/>
+			</elements>
+		</QuestionnaireResponse>
+		<ReferralRequest>
+			<elements>
+				<element name="status" allowed="draft,active,cancelled"/>
+			</elements>
+		</ReferralRequest>
+		<RequestGroup>
+			<elements>
+				<element name="status" allowed="active,completed,cancelled"/>
+			</elements>
+		</RequestGroup>
+		<Observation>
+			<elements>
+				<element name="interpretation" allowed="A,N,null"/>
+			</elements>
+		</Observation>
+	</CDS>
+</reference>

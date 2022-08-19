@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use max="" as equivalent to cardinality unbounded i.e. * -->
+<reference xmlns="http://hl7.org/fhir">
+  <CDS>
+    <parameters>
+      <elements>
+        <element name="requestId" min="1" max="1" />
+        <element name="evaluateAtDateTime" min="0" max="0" />
+        <element name="inputData" min="1" max="*" />
+        <element name="patient" min="0" max="1" />
+        <element name="encounter" min="0" max="1" />
+        <element name="initiatingOrganization" min="1" max="1" />
+        <element name="initiatingPerson" min="1" max="1" />
+        <element name="userType" min="1" max="1" />
+        <element name="userLanguage" min="1" max="1" />
+        <element name="userTaskContext" min="1" max="1" />
+        <element name="receivingOrganization" min="1" max="1" />
+        <element name="receivingPerson" min="1" max="1" />
+        <element name="recipientType" min="1" max="1" />
+        <element name="recipientLanguage" min="1" max="1" />
+        <element name="setting" min="1" max="1" />
+        <element name="settingContext" min="0" max="1" />
+      </elements>
+    </parameters>
+  </CDS>
+</reference>

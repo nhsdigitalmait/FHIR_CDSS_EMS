@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use max="" as equivalent to cardinality unbounded i.e. * -->
+<reference xmlns="http://hl7.org/fhir">
+	<CDS version="2.0-Alpha">
+		<ReferralRequest>
+			<elements>
+				<element name="status" allowed="draft,active,cancelled"/>
+			</elements>
+		</ReferralRequest>
+		<Procedure>
+			<elements>
+				<element name="status" allowed="suspended,aborted,completed,entered-in-error"/>
+			</elements>
+		</Procedure>
+	</CDS>
+</reference>
